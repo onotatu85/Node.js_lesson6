@@ -14,7 +14,7 @@ http
   });
   
   if (routeMap[req.url]) {
-    fs.readFile(routeMap[req.res],(error,data)  => {
+    fs.readFile(routeMap[req.url],(error,data)  => {
       res.write(data);
       res.end();
     });
